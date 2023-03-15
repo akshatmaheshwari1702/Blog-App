@@ -26,7 +26,8 @@ ul {
 }
 
 .footer {
-  background-color: #e6c2ae;
+  background-color: var(--navbar-footer-color);
+  /* background-color: #e6c2ae; */
   padding: 70px 0;
 }
 

@@ -10,8 +10,9 @@ nav img {
 }
 
 nav {
-  background-color: #c6997f;
+  /* background-color: var(--navbar-footer-color); */
   padding: 10px;
+
 }
 
 ul {
@@ -24,8 +25,49 @@ ul li {
   padding: 10px;
 }
 
-li a {
+li {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
+  font-size: large;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+
+a:before,
+a:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background-color: #18f08b;
+  transition: 0.5s;
+}
+
+a:after {
+  left: 0;
+  bottom: -10px;
+}
+
+a:before {
+  right: 0;
+  top: -10px;
+}
+
+a:hover {
+  color: #5c4040;
+  /* color: #ffffff; */
+}
+
+a:hover:after,
+a:hover:before {
+  width: 100%;
 }
